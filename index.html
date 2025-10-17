@@ -1,0 +1,1670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio Website - Web Developer & UI/UX Designer"
+    />
+    <meta
+      name="keywords"
+      content="portfolio, web developer, ui/ux designer, projects"
+    />
+    <meta name="author" content="Your Name" />
+    <title>My Portfolio | Web Developer & Penetrasi Tester</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="images/fotos/capi.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loader">
+        <div class="spinner"></div>
+        <p class="loading-text">Loading<span class="dots"></span></p>
+      </div>
+    </div>
+
+    <!-- SECTION 1: NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+      <div class="container">
+        <a class="navbar-brand logo-glow" href="#home">
+          <span class="logo-initial" data-text="Aniip">Aniip</span>
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#journey">Journey</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificates">Certificates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                style="
+                  color: wheat;
+                  text-decoration: none;
+                  background-color: blue;
+                  padding: 6px 10px;
+                  border-radius: 5px;
+                "
+                href="https://casaos.haniipp.my.id" id="loginBtn"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SECTION 2: HERO -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+            <div class="hero-content">
+              <h1 class="hero-title">
+                <span class="typing-text"></span>
+                <span class="cursor">|</span>
+              </h1>
+              <p class="hero-subtitle">
+                Passionate about creating beautiful, functional, and
+                user-centered digital experiences. Specialized in modern web
+                technologies and innovative design solutions.
+              </p>
+              <div class="hero-buttons">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-glow"
+                  id="motivationBtn"
+                  onclick="showMotivation()"
+                >
+                  <i class="fas fa-lightbulb me-2"></i>Kata Motivasi
+                </button>
+                <a
+                  href="assets/CV-Hanif-Abdurrohim.pdf"
+                  class="btn btn-outline-light"
+                  download
+                >
+                  <i class="fas fa-download me-2"></i>Download CV
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <div class="hero-image-wrapper">
+              <div class="floating-image">
+                <div class="image-frame">
+                  <img
+                    src="images/fotos/3.jpg"
+                    alt="Portrait"
+                    class="img-fluid portrait-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: JOURNEY TIMELINE -->
+    <section id="journey" class="journey-section">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <h2 class="section-title gradient-text">My Journey 2022-2025</h2>
+          <p class="section-subtitle">
+            The path of continuous learning and growth
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- 2022 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-badge">
+              <span class="year-badge">2022</span>
+            </div>
+            <div class="timeline-card">
+              <h3 class="timeline-title">Started Web Development Journey</h3>
+              <p class="timeline-desc">
+                Began learning HTML, CSS, and JavaScript fundamentals. Built my
+                first responsive websites and discovered passion for frontend
+                development.
+              </p>
+              <button
+                class="btn btn-sm btn-outline-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#journey2022"
+              >
+                Read More <i class="fas fa-arrow-right ms-2"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- 2023 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-badge">
+              <span class="year-badge">2023</span>
+            </div>
+            <div class="timeline-card">
+              <h3 class="timeline-title">Mastered Modern Frameworks</h3>
+              <p class="timeline-desc">
+                Deep dive into React, Vue.js, and modern CSS frameworks. Created
+                multiple real-world projects and collaborated with teams.
+              </p>
+              <button
+                class="btn btn-sm btn-outline-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#journey2023"
+              >
+                Read More <i class="fas fa-arrow-right ms-2"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- 2024 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="timeline-badge">
+              <span class="year-badge">2024</span>
+            </div>
+            <div class="timeline-card">
+              <h3 class="timeline-title">Full-Stack Development & UI/UX</h3>
+              <p class="timeline-desc">
+                Expanded to backend technologies (Node.js, databases) and UI/UX
+                design principles. Delivered end-to-end solutions for clients.
+              </p>
+              <button
+                class="btn btn-sm btn-outline-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#journey2024"
+              >
+                Read More <i class="fas fa-arrow-right ms-2"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- 2025 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="timeline-badge">
+              <span class="year-badge">2025</span>
+            </div>
+            <div class="timeline-card">
+              <h3 class="timeline-title">Advanced Technologies & Innovation</h3>
+              <p class="timeline-desc">
+                Exploring cloud services, AI integration, and advanced web
+                architectures. Building scalable applications with cutting-edge
+                tech.
+              </p>
+              <button
+                class="btn btn-sm btn-outline-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#journey2025"
+              >
+                Read More <i class="fas fa-arrow-right ms-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey Modals -->
+    <div class="modal fade" id="journey2022" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-dark">
+          <div class="modal-header border-0">
+            <h5 class="modal-title gradient-text">
+              2022 - Started Web Development Journey
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              This year marked the beginning of my journey into web development.
+              I started with the fundamentals and quickly fell in love with the
+              creative possibilities of coding.
+            </p>
+            <h6 class="mt-4 text-primary">Key Achievements:</h6>
+            <ul>
+              <li>Completed HTML5, CSS3, and JavaScript courses</li>
+              <li>Built 5+ responsive landing pages</li>
+              <li>Learned Git version control and GitHub</li>
+              <li>Created first portfolio website</li>
+            </ul>
+            <h6 class="mt-4 text-primary">Skills Learned:</h6>
+            <div class="skill-tags">
+              <span class="badge bg-primary-gradient">HTML5</span>
+              <span class="badge bg-primary-gradient">CSS3</span>
+              <span class="badge bg-primary-gradient">JavaScript</span>
+              <span class="badge bg-primary-gradient">Bootstrap</span>
+              <span class="badge bg-primary-gradient">Git</span>
+              <span class="badge bg-primary-gradient">Responsive Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="journey2023" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-dark">
+          <div class="modal-header border-0">
+            <h5 class="modal-title gradient-text">
+              2023 - Mastered Modern Frameworks
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Took my skills to the next level by diving deep into modern
+              JavaScript frameworks and libraries. This year was all about
+              building complex, interactive applications.
+            </p>
+            <h6 class="mt-4 text-primary">Key Achievements:</h6>
+            <ul>
+              <li>Mastered React.js and Vue.js frameworks</li>
+              <li>Built 10+ production-ready web applications</li>
+              <li>Learned state management (Redux, Vuex)</li>
+              <li>Implemented REST APIs and async operations</li>
+              <li>Collaborated on open-source projects</li>
+            </ul>
+            <h6 class="mt-4 text-primary">Technologies Used:</h6>
+            <div class="skill-tags">
+              <span class="badge bg-primary-gradient">React.js</span>
+              <span class="badge bg-primary-gradient">Vue.js</span>
+              <span class="badge bg-primary-gradient">Redux</span>
+              <span class="badge bg-primary-gradient">Tailwind CSS</span>
+              <span class="badge bg-primary-gradient">Webpack</span>
+              <span class="badge bg-primary-gradient">REST API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="journey2024" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-dark">
+          <div class="modal-header border-0">
+            <h5 class="modal-title gradient-text">
+              2024 - Full-Stack Development & UI/UX
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Expanded my expertise to full-stack development and UI/UX design.
+              Started working on end-to-end solutions and understanding the
+              complete product lifecycle.
+            </p>
+            <h6 class="mt-4 text-primary">Key Achievements:</h6>
+            <ul>
+              <li>Learned Node.js, Express, and MongoDB</li>
+              <li>Completed UI/UX Design certification</li>
+              <li>Built 5 full-stack applications</li>
+              <li>Designed user interfaces in Figma</li>
+              <li>Worked with real clients on projects</li>
+            </ul>
+            <h6 class="mt-4 text-primary">Technologies Used:</h6>
+            <div class="skill-tags">
+              <span class="badge bg-primary-gradient">Node.js</span>
+              <span class="badge bg-primary-gradient">Express.js</span>
+              <span class="badge bg-primary-gradient">MongoDB</span>
+              <span class="badge bg-primary-gradient">PostgreSQL</span>
+              <span class="badge bg-primary-gradient">Figma</span>
+              <span class="badge bg-primary-gradient">Adobe XD</span>
+              <span class="badge bg-primary-gradient">Next.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="journey2025" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-dark">
+          <div class="modal-header border-0">
+            <h5 class="modal-title gradient-text">
+              2025 - Advanced Technologies & Innovation
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Currently exploring cutting-edge technologies and architectural
+              patterns. Focusing on cloud services, AI integration, and building
+              scalable enterprise applications.
+            </p>
+            <h6 class="mt-4 text-primary">Current Focus:</h6>
+            <ul>
+              <li>Cloud computing (AWS, Azure)</li>
+              <li>AI/ML integration in web apps</li>
+              <li>Microservices architecture</li>
+              <li>GraphQL and modern APIs</li>
+              <li>Performance optimization</li>
+            </ul>
+            <h6 class="mt-4 text-primary">Technologies Learning:</h6>
+            <div class="skill-tags">
+              <span class="badge bg-primary-gradient">AWS</span>
+              <span class="badge bg-primary-gradient">Docker</span>
+              <span class="badge bg-primary-gradient">Kubernetes</span>
+              <span class="badge bg-primary-gradient">GraphQL</span>
+              <span class="badge bg-primary-gradient">TypeScript</span>
+              <span class="badge bg-primary-gradient">Python</span>
+              <span class="badge bg-primary-gradient">AI/ML</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Motivation Modal -->
+    <div class="modal fade" id="motivationModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-dark">
+          <div class="modal-header border-0">
+            <h5 class="modal-title gradient-text">
+              <i class="fas fa-quote-left me-2"></i>Kata Motivasi
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body text-center py-5">
+            <i
+              class="fas fa-lightbulb text-primary mb-4"
+              style="font-size: 3rem"
+            ></i>
+            <p
+              id="motivationText"
+              class="fs-5 mb-4"
+              style="line-height: 1.8; color: var(--light-gray)"
+            ></p>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm"
+              id="nextMotivationBtn"
+              onclick="changeMotivation()"
+            >
+              <i class="fas fa-sync-alt me-2"></i>Kata Motivasi Lainnya
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 4: GALLERY/PROJECTS -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <h2 class="section-title gradient-text">Featured Projects</h2>
+          <p class="section-subtitle">
+            A showcase of my recent work and creative solutions
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="images/projects/project-1.jpg"
+                  alt="E-Commerce Platform"
+                />
+                <div class="project-overlay">
+                  <button
+                    class="btn btn-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#project1"
+                  >
+                    <i class="fas fa-info-circle me-2"></i>More Info
+                  </button>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>E-Commerce Platform</h4>
+                <p>Modern shopping experience with React & Node.js</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="images/projects/project-2.jpg"
+                  alt="Dashboard Analytics"
+                />
+                <div class="project-overlay">
+                  <button
+                    class="btn btn-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#project2"
+                  >
+                    <i class="fas fa-info-circle me-2"></i>More Info
+                  </button>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>Dashboard Analytics</h4>
+                <p>Real-time data visualization dashboard</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="images/projects/project-3.jpg"
+                  alt="Social Media App"
+                />
+                <div class="project-overlay">
+                  <button
+                    class="btn btn-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#project3"
+                  >
+                    <i class="fas fa-info-circle me-2"></i>More Info
+                  </button>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>Social Media App</h4>
+                <p>Connect and share with friends</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/projects/project-4.jpg" alt="Booking System" />
+                <div class="project-overlay">
+                  <button
+                    class="btn btn-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#project4"
+                  >
+                    <i class="fas fa-info-circle me-2"></i>More Info
+                  </button>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>Hotel Booking System</h4>
+                <p>Seamless reservation experience</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="images/projects/project-5.jpg"
+                  alt="Portfolio Website"
+                />
+                <div class="project-overlay">
+                  <button
+                    class="btn btn-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#project5"
+                  >
+                    <i class="fas fa-info-circle me-2"></i>More Info
+                  </button>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>Creative Portfolio</h4>
+                <p>Stunning portfolio for photographers</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="images/projects/project-6.jpg"
+                  alt="Task Management"
+                />
+                <div class="project-overlay">
+                  <button
+                    class="btn btn-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#project6"
+                  >
+                    <i class="fas fa-info-circle me-2"></i>More Info
+                  </button>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>Task Management App</h4>
+                <p>Organize your work efficiently</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="images/projects/project-7.jpg"
+                  alt="Fitness Tracker"
+                />
+                <div class="project-overlay">
+                  <button
+                    class="btn btn-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#project7"
+                  >
+                    <i class="fas fa-info-circle me-2"></i>More Info
+                  </button>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>Fitness Tracker</h4>
+                <p>Track your health and fitness goals</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="images/projects/project-8.jpg"
+                  alt="Restaurant Website"
+                />
+                <div class="project-overlay">
+                  <button
+                    class="btn btn-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#project8"
+                  >
+                    <i class="fas fa-info-circle me-2"></i>More Info
+                  </button>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>Restaurant Website</h4>
+                <p>Beautiful menu showcase with online ordering</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 9 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/projects/project-9.jpg" alt="Weather App" />
+                <div class="project-overlay">
+                  <button
+                    class="btn btn-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#project9"
+                  >
+                    <i class="fas fa-info-circle me-2"></i>More Info
+                  </button>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>Weather Forecast App</h4>
+                <p>Real-time weather updates worldwide</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div class="modal fade" id="project1" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-dark">
+          <div class="modal-header border-0">
+            <h5 class="modal-title gradient-text">E-Commerce Platform</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/projects/project-1.jpg"
+              alt="Project"
+              class="img-fluid rounded mb-3"
+            />
+            <p>
+              A full-featured e-commerce platform with shopping cart, payment
+              integration, user authentication, and admin dashboard. Built with
+              modern technologies for optimal performance.
+            </p>
+            <h6 class="text-primary mt-3">Tech Stack:</h6>
+            <div class="skill-tags mb-3">
+              <span class="badge bg-primary-gradient">React</span>
+              <span class="badge bg-primary-gradient">Node.js</span>
+              <span class="badge bg-primary-gradient">MongoDB</span>
+              <span class="badge bg-primary-gradient">Stripe API</span>
+            </div>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-primary btn-sm" target="_blank">
+                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+              </a>
+              <a href="#" class="btn btn-outline-light btn-sm" target="_blank">
+                <i class="fab fa-github me-2"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-dark">
+          <div class="modal-header border-0">
+            <h5 class="modal-title gradient-text">Dashboard Analytics</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/projects/project-2.jpg"
+              alt="Project"
+              class="img-fluid rounded mb-3"
+            />
+            <p>
+              Interactive analytics dashboard with real-time data visualization,
+              charts, and reports. Features include data filtering, export
+              capabilities, and responsive design.
+            </p>
+            <h6 class="text-primary mt-3">Tech Stack:</h6>
+            <div class="skill-tags mb-3">
+              <span class="badge bg-primary-gradient">Vue.js</span>
+              <span class="badge bg-primary-gradient">Chart.js</span>
+              <span class="badge bg-primary-gradient">Express</span>
+              <span class="badge bg-primary-gradient">PostgreSQL</span>
+            </div>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-primary btn-sm" target="_blank">
+                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+              </a>
+              <a href="#" class="btn btn-outline-light btn-sm" target="_blank">
+                <i class="fab fa-github me-2"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project3" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-dark">
+          <div class="modal-header border-0">
+            <h5 class="modal-title gradient-text">Social Media App</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/projects/project-3.jpg"
+              alt="Project"
+              class="img-fluid rounded mb-3"
+            />
+            <p>
+              Social networking platform with posts, comments, likes, real-time
+              chat, and user profiles. Includes image upload, notifications, and
+              friend connections.
+            </p>
+            <h6 class="text-primary mt-3">Tech Stack:</h6>
+            <div class="skill-tags mb-3">
+              <span class="badge bg-primary-gradient">React</span>
+              <span class="badge bg-primary-gradient">Socket.io</span>
+              <span class="badge bg-primary-gradient">Node.js</span>
+              <span class="badge bg-primary-gradient">MongoDB</span>
+            </div>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-primary btn-sm" target="_blank">
+                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+              </a>
+              <a href="#" class="btn btn-outline-light btn-sm" target="_blank">
+                <i class="fab fa-github me-2"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project4" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-dark">
+          <div class="modal-header border-0">
+            <h5 class="modal-title gradient-text">Hotel Booking System</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/projects/project-4.jpg"
+              alt="Project"
+              class="img-fluid rounded mb-3"
+            />
+            <p>
+              Complete hotel reservation system with room availability checking,
+              booking management, payment processing, and email confirmations.
+            </p>
+            <h6 class="text-primary mt-3">Tech Stack:</h6>
+            <div class="skill-tags mb-3">
+              <span class="badge bg-primary-gradient">Next.js</span>
+              <span class="badge bg-primary-gradient">Prisma</span>
+              <span class="badge bg-primary-gradient">PostgreSQL</span>
+              <span class="badge bg-primary-gradient">Tailwind CSS</span>
+            </div>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-primary btn-sm" target="_blank">
+                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+              </a>
+              <a href="#" class="btn btn-outline-light btn-sm" target="_blank">
+                <i class="fab fa-github me-2"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project5" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-dark">
+          <div class="modal-header border-0">
+            <h5 class="modal-title gradient-text">Creative Portfolio</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/projects/project-5.jpg"
+              alt="Project"
+              class="img-fluid rounded mb-3"
+            />
+            <p>
+              Beautiful portfolio website for photographers and creatives.
+              Features gallery, lightbox, category filtering, and contact form.
+            </p>
+            <h6 class="text-primary mt-3">Tech Stack:</h6>
+            <div class="skill-tags mb-3">
+              <span class="badge bg-primary-gradient">HTML5</span>
+              <span class="badge bg-primary-gradient">SASS</span>
+              <span class="badge bg-primary-gradient">JavaScript</span>
+              <span class="badge bg-primary-gradient">GSAP</span>
+            </div>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-primary btn-sm" target="_blank">
+                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+              </a>
+              <a href="#" class="btn btn-outline-light btn-sm" target="_blank">
+                <i class="fab fa-github me-2"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project6" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-dark">
+          <div class="modal-header border-0">
+            <h5 class="modal-title gradient-text">Task Management App</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/projects/project-6.jpg"
+              alt="Project"
+              class="img-fluid rounded mb-3"
+            />
+            <p>
+              Kanban-style task management application with drag-and-drop, team
+              collaboration, deadlines, and progress tracking features.
+            </p>
+            <h6 class="text-primary mt-3">Tech Stack:</h6>
+            <div class="skill-tags mb-3">
+              <span class="badge bg-primary-gradient">React</span>
+              <span class="badge bg-primary-gradient">Redux</span>
+              <span class="badge bg-primary-gradient">Firebase</span>
+              <span class="badge bg-primary-gradient">Material-UI</span>
+            </div>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-primary btn-sm" target="_blank">
+                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+              </a>
+              <a href="#" class="btn btn-outline-light btn-sm" target="_blank">
+                <i class="fab fa-github me-2"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project7" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-dark">
+          <div class="modal-header border-0">
+            <h5 class="modal-title gradient-text">Fitness Tracker</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/projects/project-7.jpg"
+              alt="Project"
+              class="img-fluid rounded mb-3"
+            />
+            <p>
+              Health and fitness tracking app with workout logging, calorie
+              counting, progress charts, and personalized fitness goals.
+            </p>
+            <h6 class="text-primary mt-3">Tech Stack:</h6>
+            <div class="skill-tags mb-3">
+              <span class="badge bg-primary-gradient">React Native</span>
+              <span class="badge bg-primary-gradient">Node.js</span>
+              <span class="badge bg-primary-gradient">MongoDB</span>
+              <span class="badge bg-primary-gradient">Chart.js</span>
+            </div>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-primary btn-sm" target="_blank">
+                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+              </a>
+              <a href="#" class="btn btn-outline-light btn-sm" target="_blank">
+                <i class="fab fa-github me-2"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project8" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-dark">
+          <div class="modal-header border-0">
+            <h5 class="modal-title gradient-text">Restaurant Website</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/projects/project-8.jpg"
+              alt="Project"
+              class="img-fluid rounded mb-3"
+            />
+            <p>
+              Elegant restaurant website with online menu, table reservations,
+              online ordering system, and integrated payment gateway.
+            </p>
+            <h6 class="text-primary mt-3">Tech Stack:</h6>
+            <div class="skill-tags mb-3">
+              <span class="badge bg-primary-gradient">Vue.js</span>
+              <span class="badge bg-primary-gradient">Nuxt.js</span>
+              <span class="badge bg-primary-gradient">Strapi CMS</span>
+              <span class="badge bg-primary-gradient">Bootstrap</span>
+            </div>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-primary btn-sm" target="_blank">
+                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+              </a>
+              <a href="#" class="btn btn-outline-light btn-sm" target="_blank">
+                <i class="fab fa-github me-2"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project9" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-dark">
+          <div class="modal-header border-0">
+            <h5 class="modal-title gradient-text">Weather Forecast App</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/projects/project-9.jpg"
+              alt="Project"
+              class="img-fluid rounded mb-3"
+            />
+            <p>
+              Real-time weather application with location search, 7-day
+              forecast, weather alerts, and beautiful weather animations.
+            </p>
+            <h6 class="text-primary mt-3">Tech Stack:</h6>
+            <div class="skill-tags mb-3">
+              <span class="badge bg-primary-gradient">React</span>
+              <span class="badge bg-primary-gradient">OpenWeather API</span>
+              <span class="badge bg-primary-gradient">Geolocation API</span>
+              <span class="badge bg-primary-gradient">CSS3 Animations</span>
+            </div>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-primary btn-sm" target="_blank">
+                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+              </a>
+              <a href="#" class="btn btn-outline-light btn-sm" target="_blank">
+                <i class="fab fa-github me-2"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 5: CERTIFICATES -->
+    <section id="certificates" class="certificates-section">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <h2 class="section-title gradient-text">
+            Certificates & Achievements
+          </h2>
+          <p class="section-subtitle">
+            Professional certifications and accomplishments
+          </p>
+        </div>
+
+        <div
+          class="certificate-carousel"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div
+            id="certificateCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#certificateCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#certificateCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#certificateCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#certificateCarousel"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#certificateCarousel"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#certificateCarousel"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#certificateCarousel"
+                data-bs-slide-to="6"
+                aria-label="Slide 7"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <!-- Certificate 1 -->
+              <div class="carousel-item active">
+                <div class="row justify-content-center">
+                  <div class="col-lg-6 col-md-8">
+                    <div class="certificate-card" data-certificate="1">
+                      <img
+                        src="images/certificates/apre-bogor.png"
+                        alt="React Developer Certificate"
+                        class="img-fluid"
+                      />
+                      <div class="certificate-overlay">
+                        <h5>Sertifikat Apresiasi Pemkot Bogor</h5>
+                        <p>April - 2025</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Certificate 2 -->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-lg-6 col-md-8">
+                    <div class="certificate-card" data-certificate="2">
+                      <img
+                        src="images/certificates/google-cloud.png"
+                        alt="Full Stack Development Certificate"
+                        class="img-fluid"
+                      />
+                      <div class="certificate-overlay">
+                        <h5>Sertifikat Google Colud</h5>
+                        <p>Maret - 2025</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Certificate 3 -->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-lg-6 col-md-8">
+                    <div class="certificate-card" data-certificate="3">
+                      <img
+                        src="images/certificates/certificate-341040FULLSTACK_WEB_DEVELOPMENT132025-EG-1-1.png"
+                        alt="UI/UX Design Professional Certificate"
+                        class="img-fluid"
+                      />
+                      <div class="certificate-overlay">
+                        <h5>Sertifikat Full Stack With Rekamin</h5>
+                        <p>Maret - 2025</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Certificate 4 -->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-lg-6 col-md-8">
+                    <div class="certificate-card" data-certificate="4">
+                      <img
+                        src="images/certificates/sert-2.webp"
+                        alt="JavaScript Algorithms Certificate"
+                        class="img-fluid"
+                      />
+                      <div class="certificate-overlay">
+                        <h5>CEH Techniques</h5>
+                        <p>February - 2025</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Certificate 5 -->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-lg-6 col-md-8">
+                    <div class="certificate-card" data-certificate="5">
+                      <img
+                        src="images/certificates/set-jombang.png"
+                        alt="AWS Cloud Practitioner Certificate"
+                        class="img-fluid"
+                      />
+                      <div class="certificate-overlay">
+                        <h5>Sertifikat Apresiasi Pemkab Jombang</h5>
+                        <p>Juny - 2025</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Certificate 6 -->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-lg-6 col-md-8">
+                    <div class="certificate-card" data-certificate="6">
+                      <img
+                        src="images/certificates/sert-4.png"
+                        alt="Node.js Developer Certificate"
+                        class="img-fluid"
+                      />
+                      <div class="certificate-overlay">
+                        <h5>Sertifikat Lomba Networking</h5>
+                        <p>November - 2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Certificate 7 -->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-lg-6 col-md-8">
+                    <div class="certificate-card" data-certificate="7">
+                      <img
+                        src="images/certificates/sert-5.png"
+                        alt="Responsive Web Design Certificate"
+                        class="img-fluid"
+                      />
+                      <div class="certificate-overlay">
+                        <h5>Sertifikat Lomba IoT</h5>
+                        <p>December - 2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#certificateCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#certificateCarousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificate Zoom Modal -->
+    <div class="modal fade" id="certificateZoom" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content modal-dark border-0">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body text-center p-0">
+            <img
+              id="zoomedCertificate"
+              src=""
+              alt="Certificate"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 6: ABOUT ME -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <h2 class="section-title gradient-text">About Me</h2>
+          <p class="section-subtitle">Get to know me better</p>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
+            <div class="about-image-wrapper">
+              <div class="about-image-frame">
+                <img
+                  src="images/fotos/about (Edited).jpg"
+                  alt="About Me"
+                  class="img-fluid about-img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="about-content">
+              <h3 class="about-title">Web Developer & UI/UX Designer</h3>
+              <p class="about-text">
+                Hello! I'm a passionate web developer and UI/UX designer with
+                over 3 years of experience creating beautiful and functional
+                digital experiences. I specialize in building responsive,
+                user-friendly websites and applications that solve real-world
+                problems.
+              </p>
+              <p class="about-text">
+                My journey in tech started in 2022, and since then, I've been
+                continuously learning and adapting to new technologies. I
+                believe in writing clean, maintainable code and creating designs
+                that not only look great but also provide excellent user
+                experiences.
+              </p>
+              <p class="about-text">
+                When I'm not coding, you can find me exploring new design
+                trends, contributing to open-source projects, or sharing my
+                knowledge through blog posts and tutorials.
+              </p>
+
+              <!-- Skills -->
+              <div class="skills-section mt-4">
+                <h5 class="text-primary mb-3">Technical Skills</h5>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between mb-2">
+                    <span>Frontend Development</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 95%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between mb-2">
+                    <span>UI/UX Design</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between mb-2">
+                    <span>Penetrasi Testing</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 95%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between mb-2">
+                    <span>Network Engineer</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 85%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Media -->
+              <div class="social-links mt-4">
+                <h5 class="text-primary mb-3">Connect With Me</h5>
+                <div class="d-flex gap-3">
+                  <a
+                    href="https://github.com/dextryayers"
+                    target="_blank"
+                    class="social-icon"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/hanif-abdurrohim"
+                    target="_blank"
+                    class="social-icon"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://instagram.com/hanziip.kds"
+                    target="_blank"
+                    class="social-icon"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="mailto:ytaniipid@gmail.com" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a
+                    href="https://wa.me/+6282332430578"
+                    target="_blank"
+                    class="social-icon"
+                  >
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <h2 class="section-title gradient-text">Get In Touch</h2>
+          <p class="section-subtitle">
+            Let's work together on your next project
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <form class="contact-form">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-glow">
+                  <i class="fas fa-paper-plane me-2"></i>Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="row mt-5 text-center">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-info">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h5>Email</h5>
+              <p>ytaniipid@gmail.com</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="contact-info">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h5>Phone</h5>
+              <p>+62 823 3243 0578</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="contact-info">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h5>Location</h5>
+              <p>Surabaya, Kenjeran, Indonesia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h5 class="footer-title">About</h5>
+            <p class="footer-text">
+              Web Developer & UI/UX Designer passionate about creating beautiful
+              digital experiences.
+            </p>
+            <div class="footer-social">
+              <a href="https://github.com" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://linkedin.com" target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://instagram.com" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="mailto:your@email.com"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <h5 class="footer-title">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="https://haniipp.my.id">Home</a></li>
+              <li><a href="https://me.haniipp.my.id">About</a></li>
+              <li><a href="https://haniipp.my.id">Journey</a></li>
+              <li><a href="https://repo.haniipp.my.id">Projects</a></li>
+              <li><a href="#certificates">Certificates</a></li>
+              <li><a href="https://casaos.haniipp.my.id">Login</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="footer-title">Newsletter</h5>
+            <p class="footer-text">
+              Subscribe to get updates on my latest projects and blog posts.
+            </p>
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your email"
+                />
+                <button class="btn btn-primary" type="submit">
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Portfolio. Designed & Developed with
+            <i class="fas fa-heart text-danger"></i> by
+            <span class="text-primary">Hanip</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+  </body>
+</html>
