@@ -262,4 +262,6 @@ If you have any questions or need help customizing your portfolio, feel free to 
 
 **Made with ❤️ and ☕**
 
+**Copyright AniipID**
+
 Happy coding! 🚀
